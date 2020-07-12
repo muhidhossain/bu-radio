@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+.homeDetails{
+    display: flex;
+}
+.homeDetails > *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.homeDetails > *:first-child{
+    margin-top: 100px;
+    color: white;
+}
+.homeDetails > * h1{
+    font-size: 90px;
+    font-weight: 900;
+    font-family: 'Open Sans', sans-serif;
+}
+.homeDetails > * p{
+    font-family: 'Open Sans', sans-serif;
+}
+.home .getStartedBtn{
+    background-color: white;
+    font-weight: 800;
+    outline: none;
+    padding: 10px 30px;
+    color: blue;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 50px;
+}
+.home .getStartedBtn:hover{
+    background-color: whitesmoke;
+}
+.home .downloadBtn{
+    background-color: #3b3bfc;
+    color: white;
+    font-weight: 800;
+    border: 2px solid white;
+    margin-left: 20px;
+    outline: none;
+    padding: 10px 30px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 50px;
+}
+.home .downloadBtn:hover{
+    background-color: blue;
+}
+.home .slider{
+    width: 750px;
+    height: 670px;
+    object-position: left bottom;
+    opacity: 0;
+}
+.home .followUs{
+    margin-top: 100px;
+}
+.home .followUs h4{
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+.home .followUs > div > *{
+    font-size: 40px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: lightgrey;
+}
+.home .followUs > div > *:hover{
+    color: white;
+}
+
+@media only screen and (max-width: 1400px){
+    .homeDetails > * h1{
+        font-size: 80px;
+    }
+    .home .slider{
+        height: 660px;
+        width: 660px;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    .home .slider{
+        width: 640px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    
+}

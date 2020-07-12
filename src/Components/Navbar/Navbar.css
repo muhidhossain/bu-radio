@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+.navbar .navItems{
+    display: flex;
+    align-items: center;
+}
+.navbar .logo{
+    height: 60px;
+    margin-right: 80px;
+}
+.navbar .navLink{
+    color: white;
+    font-weight: 700;
+    margin: 0px 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+.navbar .navButton{
+    background-color: white;
+    font-weight: 800;
+    outline: none;
+    padding: 10px 20px;
+    color: blue;
+    margin-left: 80px;
+    font-family: 'Open Sans', sans-serif;
+}
+.navbar .navButton:hover{
+    background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 1300px) {
+    .navbar .logo{
+        margin-right: 50px;
+    }
+    .navbar .navButton{
+        margin-left: 50px;
+    }
+    .navbar .navLink{
+        margin: 0px 5px;
+    }
+}
