@@ -30,6 +30,9 @@
 .navbar .navButton:hover{
     background-color: whitesmoke;
 }
+.navbar .navDrawer{
+    display: none;
+}
 
 @media only screen and (max-width: 1300px) {
     .navbar .logo{
@@ -40,5 +43,44 @@
     }
     .navbar .navLink{
         margin: 0px 5px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .navbar .logo{
+        margin-right: 5px;
+    }
+    .navbar .navButton{
+        margin-left: 5px;
+    }
+    .navbar .navLink{
+        margin: 0px -2px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar .navButton{
+        display: none;
+    }
+    .navbar .navLink{
+        display: none;
+    }
+    .navbar .navDrawer{
+        display: block;
+    }
+    .navbar > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar .logo{
+        height: 30px;
+    }
+    .drawer-btn p{
+        padding: 0px 40px;
+        font-weight: 700;
+        color: white;
+        padding-top: 15px;
     }
 }

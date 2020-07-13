@@ -7,14 +7,29 @@ import slider from '../../images/slider.png';
 import { TweenMax, Power3 } from 'gsap';
 import { useEffect } from 'react';
 import { Link } from '@material-ui/core';
+import smallerSlider from '../../images/smallerSlider.png';
 
 const Home = () => {
     let sliderImage = useRef(null);
+    let smallerSliderImage = useRef(null)
 
     useEffect(() => {
         console.log(sliderImage);
         TweenMax.to(
             sliderImage,
+            .8,
+            {
+                opacity: 1,
+                x: -100,
+                ease: Power3.easeInOut
+            }
+        )
+    }, []);
+
+    useEffect(() => {
+        console.log(smallerSliderImage);
+        TweenMax.to(
+            smallerSliderImage,
             .8,
             {
                 opacity: 1,
@@ -57,8 +72,11 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className="sliderDiv">
                     <img ref={slider => { sliderImage = slider }} className="slider" src={slider} alt="" />
+                </div>
+                <div className="smallerSliderDiv">
+                    <img ref={slider => { smallerSliderImage = slider }} className="smallerSlider" src={smallerSlider} alt="" />
                 </div>
             </div>
         </div>
